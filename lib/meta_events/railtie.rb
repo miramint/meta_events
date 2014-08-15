@@ -1,3 +1,7 @@
+if defined?(::Spring)
+require 'spring/watcher'
+end
+
 module MetaEvents
   class Railtie < Rails::Railtie
     def say(x)
